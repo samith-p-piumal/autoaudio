@@ -22,7 +22,7 @@ export default function Home() {
             id: 2,
             name: 'Bluetooth Speaker Pro',
             price: 18999,
-            image: 'products/soundbar.jpg',
+            image: 'products/product2.jpg',
             category: 'Speakers'
         },
         {
