@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 export default function Home() {
     // Hero slider state
-    const [currentSlide, setCurrentSlide] = useState(0);
+    //const [currentSlide, setCurrentSlide] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     // Sample product data
@@ -51,7 +51,7 @@ export default function Home() {
     // Auto-rotate slides
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+            //setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
         }, 5000);
         return () => clearInterval(interval);
     }, [slides.length]);
@@ -272,7 +272,7 @@ export default function Home() {
                         <div className="md:w-1/2">
                             <h3 className="text-2xl font-semibold mb-4">Premium Audio Solutions Since 2010</h3>
                             <p className="text-gray-700 mb-4">
-                                We are Sri Lanka's leading audio equipment provider, offering the latest in sound technology for both home and professional use.
+                                We are Sri Lanka&#39;s leading audio equipment provider, offering the latest in sound technology for both home and professional use.
                             </p>
                             <p className="text-gray-700">
                                 Our team of audio experts carefully selects each product in our inventory to ensure the highest quality and performance for our customers.
