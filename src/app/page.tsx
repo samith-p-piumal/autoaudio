@@ -1,45 +1,3 @@
-/*
-// app/page.tsx
-import Navbar from '@/components/Navbar';
-import HeroSlider from '@/components/HeroSlider';
-import ProductCard from '@/components/ProductCard';
-//import Footer from '@/components/Footer';
-
-
-// Mock data - replace with your actual data fetching
-const featuredProducts = [
-  {
-    id: '1',
-    name: 'Premium Headphones',
-    price: 24999,
-    image: '/images/product1.jpg',
-    category: 'Headphones'
-  },
-  // Add more products...
-];
-
-export default function Home() {
-  return (
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          <HeroSlider />
-
-          <section className="py-12 px-4 max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">Featured Products</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {featuredProducts.map((product) => (
-                  <ProductCard key={product.id} {...product} />
-              ))}
-            </div>
-          </section>
-        </main>
-        {/!*<Footer />*!/}
-      </div>
-  );
-}*/
-
-
 // app/page.tsx
 'use client'; // Needed for interactivity like the slider
 
@@ -106,7 +64,7 @@ export default function Home() {
             </Head>
 
             {/* Navigation */}
-            <nav className="bg-white shadow-lg sticky top-0 z-50">
+            <nav className="bg-black shadow-lg sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex items-center">
@@ -124,10 +82,10 @@ export default function Home() {
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center space-x-8">
-                            <a href="#home" className="text-gray-700 hover:text-blue-600">Home</a>
-                            <a href="#products" className="text-gray-700 hover:text-blue-600">Products</a>
-                            <a href="#about" className="text-gray-700 hover:text-blue-600">About</a>
-                            <a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a>
+                            <a href="#home" className="text-white hover:text-blue-600">Home</a>
+                            <a href="#products" className="text-white hover:text-blue-600">Products</a>
+                            <a href="#about" className="text-white hover:text-blue-600">About</a>
+                            <a href="#contact" className="text-white hover:text-blue-600">Contact</a>
                         </div>
 
                         {/* Mobile menu button - remains the same */}
@@ -379,11 +337,11 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="md:flex justify-between items-center">
                         <div className="mb-4 md:mb-0">
-                            <h3 className="text-xl font-bold">AudioPro</h3>
+                            <h3 className="text-xl font-bold">CarUnity</h3>
                             <p className="text-gray-400 mt-1">Premium Audio Equipment</p>
                         </div>
                         <div className="flex space-x-6">
-                            <a href="#" className="text-gray-400 hover:text-white">
+                            <a href="https://www.facebook.com/carunity.lk" className="text-gray-400 hover:text-white">
                                 <span className="sr-only">Facebook</span>
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                                     <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
@@ -398,7 +356,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                        <p>&copy; {new Date().getFullYear()} AudioPro. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} CarUnity.lk. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
